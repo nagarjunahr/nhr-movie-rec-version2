@@ -55,7 +55,7 @@
   <script>
     async function getRecommendations() {
       const movie = document.getElementById("movieInput").value;
-      const res = await fetch("http://127.0.0.1:5000/recommend", {
+      const res = await fetch("https://nagarjuna-movie-recommender-ghdygtfvbbb4fydy.centralus-01.azurewebsites.net/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ movie }),
